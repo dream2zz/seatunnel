@@ -9,13 +9,14 @@ RUN wget https://dlcdn.apache.org/seatunnel/${SEATUNNEL_VERSION}/apache-seatunne
 
 WORKDIR ${SEATUNNEL_HOME}
 
-RUN echo  "--connectors-v2-- \n connector-fake \n\
-connector-console \n\
-connector-http-base \n\
-connector-kafka \n\
-connector-jdbc \n\
-connector-cdc-mysql \n\
-connector-starrocks \n\
---end--" > ./config/plugin_config
+RUN echo  "--connectors-v2--" > ./config/plugin_config && \
+    echo  "connector-fake" >> ./config/plugin_config && \
+    echo  "connector-console" >> ./config/plugin_config && \
+    echo  "connector-http-base" >> ./config/plugin_config && \
+    echo  "connector-kafka" >> ./config/plugin_config && \
+    echo  "connector-jdbc" >> ./config/plugin_config && \
+    echo  "connector-cdc-mysql" >> ./config/plugin_config && \
+    echo  "connector-starrocks" >> ./config/plugin_config && \
+    echo  "--end--" >> ./config/plugin_config
 
 RUN ./bin/install-plugin.sh ${SEATUNNEL_VERSION}
