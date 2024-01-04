@@ -1,0 +1,304 @@
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+2024-01-04 03:08:53,964 WARN  org.apache.seatunnel.core.starter.seatunnel.args.ClientCommandArgs$MasterTypeValidator - 
+******************************************************************************************
+-e and --deploy-mode deprecated in 2.3.1, please use -m and --master instead of it
+******************************************************************************************
+Jan 04, 2024 3:08:53 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Loading configuration '/opt/seatunnel/config/seatunnel.yaml' from System property 'seatunnel.config'
+Jan 04, 2024 3:08:53 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Using configuration file at /opt/seatunnel/config/seatunnel.yaml
+Jan 04, 2024 3:08:53 AM org.apache.seatunnel.engine.common.config.SeaTunnelConfig
+INFO: seatunnel.home is /opt/seatunnel
+Jan 04, 2024 3:08:54 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Loading configuration '/opt/seatunnel/config/hazelcast.yaml' from System property 'hazelcast.config'
+Jan 04, 2024 3:08:54 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Using configuration file at /opt/seatunnel/config/hazelcast.yaml
+Jan 04, 2024 3:08:54 AM com.hazelcast.instance.impl.HazelcastInstanceFactory
+WARNING: Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2024-01-04 03:08:54,350 WARN  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel-556511] [5.1] You configured your member address as host name. Please be aware of that your dns can be spoofed. Make sure that your dns configurations are correct.
+2024-01-04 03:08:54,350 INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel-556511] [5.1] Resolving domain name 'localhost' to address(es): [127.0.0.1] 
+2024-01-04 03:08:54,350 INFO  com.hazelcast.instance.AddressPicker - [LOCAL] [seatunnel-556511] [5.1] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [localhost/127.0.0.1]
+2024-01-04 03:08:54,398 INFO  org.apache.seatunnel.engine.server.SeaTunnelServer - SeaTunnel server start...
+2024-01-04 03:08:54,400 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-556511] [5.1] Based on Hazelcast IMDG version: 5.1.0 (20220228 - 21f20e7)
+2024-01-04 03:08:54,400 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-556511] [5.1] Cluster name: seatunnel-556511
+2024-01-04 03:08:54,400 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-556511] [5.1]
+
+ _____               _____                             _
+/  ___|             |_   _|                           | |
+\ `--.   ___   __ _   | |   _   _  _ __   _ __    ___ | |
+ `--. \ / _ \ / _` |  | |  | | | || '_ \ | '_ \  / _ \| |
+/\__/ /|  __/| (_| |  | |  | |_| || | | || | | ||  __/| |
+\____/  \___| \__,_|  \_/   \__,_||_| |_||_| |_| \___||_|
+
+
+2024-01-04 03:08:54,400 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-556511] [5.1] Copyright © 2021-2022 The Apache Software Foundation. Apache SeaTunnel, SeaTunnel, and its feather logo are trademarks of The Apache Software Foundation.
+2024-01-04 03:08:54,400 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-556511] [5.1] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed.
+To enable integrity checker do one of the following:
+  - Change member config using Java API: config.setIntegrityCheckerEnabled(true);
+  - Change XML/YAML configuration property: Set hazelcast.integrity-checker.enabled to true
+  - Add system property: -Dhz.integritychecker.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_INTEGRITYCHECKER_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-01-04 03:08:54,406 INFO  com.hazelcast.system - [localhost]:5801 [seatunnel-556511] [5.1] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)2024-01-04 03:08:54,675 INFO  com.hazelcast.system.security - [localhost]:5801 [seatunnel-556511] [5.1] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see 🔒 security recommendations and the status of current config.
+2024-01-04 03:08:54,738 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-556511] [5.1] Using TCP/IP discovery
+2024-01-04 03:08:54,739 WARN  com.hazelcast.cp.CPSubsystem - [localhost]:5801 [seatunnel-556511] [5.1] CP Subsystem is not enabled. CP data structures will operate 
+in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+Jan 04, 2024 3:08:54 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Loading configuration '/opt/seatunnel/config/seatunnel.yaml' from System property 'seatunnel.config'
+Jan 04, 2024 3:08:54 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Using configuration file at /opt/seatunnel/config/seatunnel.yaml
+Jan 04, 2024 3:08:54 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Loading configuration '/opt/seatunnel/config/hazelcast.yaml' from System property 'hazelcast.config'
+Jan 04, 2024 3:08:54 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Using configuration file at /opt/seatunnel/config/hazelcast.yaml
+2024-01-04 03:08:54,897 WARN  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] The Node is not ready yet, Node state STARTING,looking forward to the next scheduling
+2024-01-04 03:08:54,897 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] Created new BusWork : 398088176   
+2024-01-04 03:08:54,929 WARN  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - failed send heartbeat to resource manager, will retry later. this address: [localhost]:5801
+2024-01-04 03:08:54,937 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-556511] [5.1] 
+***********************************************
+     CoordinatorService Thread Pool Status
+***********************************************
+activeCount               :                   0
+corePoolSize              :                   0
+maximumPoolSize           :          2147483647
+poolSize                  :                   0
+completedTaskCount        :                   0
+taskCount                 :                   0
+***********************************************
+
+2024-01-04 03:08:54,979 INFO  com.hazelcast.internal.diagnostics.Diagnostics - [localhost]:5801 [seatunnel-556511] [5.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-01-04 03:08:54,983 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5801 is STARTING
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5821 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5825 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5820 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5827 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5823 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5822 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5829 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5817 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5819 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5804 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5813 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5816 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5810 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5824 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5826 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5814 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5811 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5802 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5805 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5809 is added to the blacklist.
+2024-01-04 03:08:55,029 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5807 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5808 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5812 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5828 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5803 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5830 is added to the blacklist.
+2024-01-04 03:08:55,030 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5818 is added to the blacklist.
+2024-01-04 03:08:55,033 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5806 is added to the blacklist.
+2024-01-04 03:08:55,033 INFO  com.hazelcast.internal.cluster.impl.TcpIpJoiner - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5815 is added to the blacklist.
+2024-01-04 03:08:56,022 INFO  com.hazelcast.internal.cluster.ClusterService - [localhost]:5801 [seatunnel-556511] [5.1] 
+
+Members {size:1, ver:1} [
+        Member [localhost]:5801 - 3f712ee8-cbc2-469a-813d-bb0c93b88fba this
+]
+
+2024-01-04 03:08:56,030 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5801 is STARTED
+Jan 04, 2024 3:08:56 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Loading configuration '/opt/seatunnel/config/hazelcast-client.yaml' from System property 'hazelcast.client.config'
+Jan 04, 2024 3:08:56 AM com.hazelcast.internal.config.AbstractConfigLocator
+INFO: Using configuration file at /opt/seatunnel/config/hazelcast-client.yaml
+2024-01-04 03:08:56,078 INFO  com.hazelcast.client.impl.spi.ClientInvocationService - hz.client_1 [seatunnel-556511] [5.1] Running with 2 response threads, dynamic=true
+2024-01-04 03:08:56,091 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-556511] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is STARTING
+2024-01-04 03:08:56,093 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-556511] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is STARTED        
+2024-01-04 03:08:56,107 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-556511] [5.1] Trying to connect to cluster: seatunnel-556511
+2024-01-04 03:08:56,109 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-556511] [5.1] Trying to connect to [localhost]:5801
+2024-01-04 03:08:56,132 INFO  com.hazelcast.client.impl.protocol.task.AuthenticationMessageTask - [localhost]:5801 [seatunnel-556511] [5.1] Received auth from Connection[id=1, /127.0.0.1:5801->/127.0.0.1:47127, qualifier=null, endpoint=[127.0.0.1]:47127, remoteUuid=21894781-66be-49ce-b4eb-7e178710ddf6, alive=true, connectionType=JVM, planeIndex=-1], successfully authenticated, clientUuid: 21894781-66be-49ce-b4eb-7e178710ddf6, client name: hz.client_1, client version: 5.1
+2024-01-04 03:08:56,150 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-556511] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is CLIENT_CONNECTED
+2024-01-04 03:08:56,150 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-556511] [5.1] Authenticated with server [localhost]:5801:3f712ee8-cbc2-469a-813d-bb0c93b88fba, server version: 5.1, local address: /127.0.0.1:47127
+2024-01-04 03:08:56,152 INFO  com.hazelcast.internal.diagnostics.Diagnostics - hz.client_1 [seatunnel-556511] [5.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-01-04 03:08:56,161 INFO  com.hazelcast.client.impl.spi.ClientClusterService - hz.client_1 [seatunnel-556511] [5.1] 
+
+Members [1] {
+        Member [localhost]:5801 - 3f712ee8-cbc2-469a-813d-bb0c93b88fba
+}
+
+2024-01-04 03:08:56,191 INFO  com.hazelcast.client.impl.statistics.ClientStatisticsService - Client statistics is enabled with period 5 seconds.
+2024-01-04 03:08:56,295 INFO  org.apache.seatunnel.engine.client.job.JobExecutionEnvironment - add common jar in plugins :[]
+2024-01-04 03:08:56,309 INFO  org.apache.seatunnel.core.starter.utils.ConfigBuilder - Loading config file from path: /demo/conf
+2024-01-04 03:08:56,363 INFO  org.apache.seatunnel.core.starter.utils.ConfigShadeUtils - Load config shade spi: [base64]
+2024-01-04 03:08:56,399 INFO  org.apache.seatunnel.core.starter.utils.ConfigBuilder - Parsed config file: {
+    "env" : {
+        "execution.parallelism" : 1,
+        "job.mode" : "BATCH"
+    },
+    "source" : [
+        {
+            "schema" : {
+                "fields" : {
+                    "name" : "string",
+                    "age" : "int"
+                }
+            },
+            "row.num" : 16,
+            "result_table_name" : "fake",
+            "plugin_name" : "FakeSource"
+        }
+    ],
+    "sink" : [
+        {
+            "plugin_name" : "Console"
+        }
+    ]
+}
+
+2024-01-04 03:08:56,422 INFO  org.apache.seatunnel.api.configuration.ReadonlyConfig - Config uses fallback configuration key 'plugin_name' instead of key 'factory'
+2024-01-04 03:08:56,423 INFO  org.apache.seatunnel.api.configuration.ReadonlyConfig - Config uses fallback configuration key 'plugin_name' instead of key 'factory'
+2024-01-04 03:08:56,432 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Load SeaTunnelSink Plugin from /opt/seatunnel/connectors/seatunnel
+2024-01-04 03:08:56,438 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Discovery plugin jar: FakeSource at: file:/opt/seatunnel/connectors/seatunnel/connector-fake-2.3.3.jar
+2024-01-04 03:08:56,439 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Discovery plugin jar: Console at: file:/opt/seatunnel/connectors/seatunnel/connector-console-2.3.3.jar
+2024-01-04 03:08:56,442 INFO  org.apache.seatunnel.engine.core.parse.ConfigParserUtil - Currently, incorrect configuration of source_table_name and result_table_name options don't affect job running. In the future we will ban incorrect configurations.
+2024-01-04 03:08:56,442 INFO  org.apache.seatunnel.api.configuration.ReadonlyConfig - Config uses fallback configuration key 'plugin_name' instead of key 'factory' 
+2024-01-04 03:08:56,442 INFO  org.apache.seatunnel.api.configuration.ReadonlyConfig - Config uses fallback configuration key 'plugin_name' instead of key 'factory' 
+2024-01-04 03:08:56,443 WARN  org.apache.seatunnel.engine.core.parse.ConfigParserUtil - This configuration is not recommended. A source/transform(FakeSource) is configured with 'result_table_name' option value of 'fake', but subsequent transform/sink(Console) is not configured with 'source_table_name' option.
+2024-01-04 03:08:56,449 INFO  org.apache.seatunnel.engine.core.parse.MultipleTableJobConfigParser - start generating all sources.
+2024-01-04 03:08:56,449 INFO  org.apache.seatunnel.api.configuration.ReadonlyConfig - Config uses fallback configuration key 'plugin_name' instead of key 'factory' 
+2024-01-04 03:08:56,466 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Load SeaTunnelSource Plugin from /opt/seatunnel/connectors/seatunnel
+2024-01-04 03:08:56,470 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Discovery plugin jar: FakeSource at: file:/opt/seatunnel/connectors/seatunnel/connector-fake-2.3.3.jar
+2024-01-04 03:08:56,473 INFO  org.apache.seatunnel.plugin.discovery.AbstractPluginDiscovery - Load plugin: PluginIdentifier{engineType='seatunnel', pluginType='source', pluginName='FakeSource'} from classpath
+2024-01-04 03:08:56,489 INFO  org.apache.seatunnel.engine.core.parse.MultipleTableJobConfigParser - start generating all transforms.
+2024-01-04 03:08:56,489 INFO  org.apache.seatunnel.engine.core.parse.MultipleTableJobConfigParser - start generating all sinks.
+2024-01-04 03:08:56,490 INFO  org.apache.seatunnel.api.configuration.ReadonlyConfig - Config uses fallback configuration key 'plugin_name' instead of key 'factory'
+2024-01-04 03:08:56,499 INFO  org.apache.seatunnel.api.configuration.ReadonlyConfig - Config uses fallback configuration key 'plugin_name' instead of key 'factory'
+2024-01-04 03:08:56,567 INFO  org.apache.seatunnel.engine.client.job.ClientJobProxy - Start submit job, job id: 795126525031612417, with plugin jar [file:/opt/seatunnel/connectors/seatunnel/connector-console-2.3.3.jar, file:/opt/seatunnel/connectors/seatunnel/connector-fake-2.3.3.jar]
+2024-01-04 03:08:56,575 WARN  org.apache.seatunnel.engine.server.SeaTunnelServer - This is master node, waiting the coordinator service init finished
+2024-01-04 03:08:56,939 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-556511] [5.1] This node become a new active master node, begin init coordinator service
+2024-01-04 03:08:56,967 INFO  com.hazelcast.internal.partition.impl.PartitionStateManager - [localhost]:5801 [seatunnel-556511] [5.1] Initializing cluster partition table arrangement...
+2024-01-04 03:08:57,080 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - Init ResourceManager
+2024-01-04 03:08:57,080 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - initWorker...
+2024-01-04 03:08:57,080 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - initWorker live nodes: [[localhost]:5801]
+2024-01-04 03:08:57,082 INFO  org.apache.seatunnel.engine.server.resourcemanager.AbstractResourceManager - registerWorker: {[localhost]:5801=WorkerProfile(address=[localhost]:5801, profile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=1073741824}}, unassignedResource=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=1073741824}}, assignedSlots=[], unassignedSlots=[])}
+2024-01-04 03:08:57,098 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Init JobMaster for Job SeaTunnel_Job (795126525031612417) 
+2024-01-04 03:08:57,100 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Job SeaTunnel_Job (795126525031612417) needed jar urls [file:/opt/seatunnel/connectors/seatunnel/connector-console-2.3.3.jar, file:/opt/seatunnel/connectors/seatunnel/connector-fake-2.3.3.jar]
+2024-01-04 03:08:57,292 WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2024-01-04 03:08:57,393 INFO  org.apache.seatunnel.engine.checkpoint.storage.hdfs.HdfsStorage - Path /tmp/seatunnel/checkpoint_snapshot/795126525031612417 is not a 
+directory
+2024-01-04 03:08:57,393 INFO  org.apache.seatunnel.engine.checkpoint.storage.hdfs.HdfsStorage - No checkpoint found for job, job id is: 795126525031612417
+2024-01-04 03:08:57,396 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - The task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] is in state CREATED when init state future
+2024-01-04 03:08:57,397 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - The task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] is in state CREATED when init state future
+2024-01-04 03:08:57,400 INFO  org.apache.seatunnel.engine.client.job.ClientJobProxy - Submit job finished, job id: 795126525031612417, job name: SeaTunnel
+2024-01-04 03:08:57,402 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Job Job SeaTunnel_Job (795126525031612417) waiting for scheduler finished       
+2024-01-04 03:08:57,402 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job SeaTunnel_Job (795126525031612417) turn from state CREATED to SCHEDULED.
+2024-01-04 03:08:57,405 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)] turn from state CREATED to SCHEDULED.
+2024-01-04 03:08:57,408 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] state from CREATED to SCHEDULED
+2024-01-04 03:08:57,415 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] turn from state CREATED to SCHEDULED.
+2024-01-04 03:08:57,419 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] state from CREATED to SCHEDULED
+2024-01-04 03:08:57,421 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] turn from state CREATED to SCHEDULED.
+2024-01-04 03:08:57,431 WARN  org.apache.seatunnel.engine.client.job.JobMetricsRunner - Failed to get job metrics summary, it maybe first-run
+2024-01-04 03:08:57,432 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)] turn from state SCHEDULED to DEPLOYING.
+2024-01-04 03:08:57,434 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] state from SCHEDULED to DEPLOYING
+2024-01-04 03:08:57,436 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] turn from state SCHEDULED to DEPLOYING.
+2024-01-04 03:08:57,438 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] state from SCHEDULED to DEPLOYING
+2024-01-04 03:08:57,447 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] turn from state SCHEDULED to DEPLOYING.
+2024-01-04 03:08:57,451 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] received deploying task executionId [795126529783758849]
+2024-01-04 03:08:57,456 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] received deploying task executionId [795126529783824385]
+2024-01-04 03:08:57,464 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] deploying task TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=1}, executionId [795126529783758849]
+2024-01-04 03:08:57,464 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] deploying TaskGroup TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=1} init success
+2024-01-04 03:08:57,468 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] deploying TaskGroup TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=1} success
+2024-01-04 03:08:57,468 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] state from DEPLOYING to RUNNING
+2024-01-04 03:08:57,469 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - starting seatunnel source split enumerator task, source name: pipeline-1 [Source[0]-FakeSource-fake]
+2024-01-04 03:08:57,471 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] turn from state DEPLOYING to RUNNING.
+2024-01-04 03:08:57,480 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] deploying task TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000}, executionId [795126529783824385]
+2024-01-04 03:08:57,481 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] deploying TaskGroup TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000} init success
+2024-01-04 03:08:57,482 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] deploying TaskGroup TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000} success
+2024-01-04 03:08:57,483 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Try to update the task Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] state from DEPLOYING to RUNNING
+2024-01-04 03:08:57,485 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] turn from state DEPLOYING to RUNNING.
+2024-01-04 03:08:57,485 INFO  org.apache.seatunnel.engine.server.task.TransformSeaTunnelTask - starting seatunnel transform task, index 0
+2024-01-04 03:08:57,485 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)] turn from state DEPLOYING to RUNNING.
+2024-01-04 03:08:57,487 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job SeaTunnel_Job (795126525031612417) turn from state SCHEDULED to RUNNING.
+2024-01-04 03:08:57,489 INFO  org.apache.seatunnel.engine.server.master.JobMaster - Job SeaTunnel_Job (795126525031612417) scheduler finished
+2024-01-04 03:08:57,490 INFO  org.apache.seatunnel.engine.server.task.SourceSeaTunnelTask - starting seatunnel source task, index 0
+2024-01-04 03:08:57,498 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - output rowType: name<STRING>, age<INT>
+2024-01-04 03:08:57,592 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - received reader register, readerID: TaskLocation{taskGroupLocation=TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000}, taskID=40000, index=0}
+2024-01-04 03:08:57,674 INFO  org.apache.seatunnel.engine.server.task.SourceSplitEnumeratorTask - received enough reader, starting enumerator...
+2024-01-04 03:08:57,674 INFO  org.apache.seatunnel.connectors.seatunnel.fake.source.FakeSourceSplitEnumerator - Starting to calculate splits.
+2024-01-04 03:08:57,675 INFO  org.apache.seatunnel.connectors.seatunnel.fake.source.FakeSourceSplitEnumerator - Assigned [FakeSourceSplit(splitId=0, rowNum=16)] to 
+1 readers.
+2024-01-04 03:08:57,676 INFO  org.apache.seatunnel.connectors.seatunnel.fake.source.FakeSourceSplitEnumerator - Calculated splits successfully, the size of splits is 1.
+2024-01-04 03:08:57,676 INFO  org.apache.seatunnel.connectors.seatunnel.fake.source.FakeSourceSplitEnumerator - Assigning splits to readers 0 [FakeSourceSplit(splitId=0, rowNum=16)]
+2024-01-04 03:08:57,698 INFO  org.apache.seatunnel.connectors.seatunnel.fake.source.FakeSourceReader - 16 rows of data have been generated in split(0). Generation time: 1704337737693
+2024-01-04 03:08:57,699 INFO  org.apache.seatunnel.connectors.seatunnel.fake.source.FakeSourceReader - Closed the bounded fake source
+2024-01-04 03:08:57,699 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=1:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : WAhiR, 2022510534
+2024-01-04 03:08:57,699 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=2:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : AEMbI, 583624813
+2024-01-04 03:08:57,699 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=3:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : wtuFC, 566743174
+2024-01-04 03:08:57,699 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=4:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : YgIJn, 666960698
+2024-01-04 03:08:57,699 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=5:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : EaZFk, 1350700163
+2024-01-04 03:08:57,699 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=6:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : tNbRK, 329788633
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=7:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : WFYwT, 2055208788
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=8:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : TkTpb, 1962463944
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=9:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : bwBfP, 38850191
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=10:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : SxDZQ, 139348160
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=11:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : aArIQ, 685336042
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=12:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : vDejd, 1089592695
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=13:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : frPIF, 101179845
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=14:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : EGHlL, 1853971302
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=15:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : BElek, 573158918
+2024-01-04 03:08:57,700 INFO  org.apache.seatunnel.connectors.seatunnel.console.sink.ConsoleSinkWriter - subtaskIndex=0  rowIndex=16:  SeaTunnelRow#tableId= SeaTunnelRow#kind=INSERT : jrbXy, 606066621
+2024-01-04 03:08:57,785 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - wait checkpoint completed: 9223372036854775807
+2024-01-04 03:08:57,852 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - pending checkpoint(9223372036854775807/1@795126525031612417) notify finished!
+2024-01-04 03:08:57,852 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start notify checkpoint completed, checkpoint:org.apache.seatunnel.engine.server.checkpoint.CompletedCheckpoint@40426d4c
+2024-01-04 03:08:57,858 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - start clean pending checkpoint cause CheckpointCoordinator completed.
+2024-01-04 03:08:57,859 INFO  org.apache.seatunnel.engine.server.checkpoint.CheckpointCoordinator - Turn checkpoint_state_795126525031612417_1 state from null to FINISHED
+2024-01-04 03:08:57,883 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] taskDone, taskId = 20000, taskGroup = TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=1}
+2024-01-04 03:08:57,884 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] Task TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=1} complete with state FINISHED
+2024-01-04 03:08:57,884 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-556511] [5.1] Received task end from execution TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=1}, state FINISHED
+2024-01-04 03:08:57,886 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] turn to end state FINISHED.
+2024-01-04 03:08:57,887 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SplitEnumerator (1/1)] end with state FINISHED
+2024-01-04 03:08:57,896 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] taskDone, taskId = 50000, taskGroup = TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000}
+2024-01-04 03:08:58,700 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] taskDone, taskId = 40000, taskGroup = TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000}
+2024-01-04 03:08:58,701 INFO  org.apache.seatunnel.engine.server.TaskExecutionService - [localhost]:5801 [seatunnel-556511] [5.1] Task TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000} complete with state FINISHED
+2024-01-04 03:08:58,702 INFO  org.apache.seatunnel.engine.server.CoordinatorService - [localhost]:5801 [seatunnel-556511] [5.1] Received task end from execution TaskGroupLocation{jobId=795126525031612417, pipelineId=1, taskGroupId=30000}, state FINISHED
+2024-01-04 03:08:58,705 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] turn to end state FINISHED.
+2024-01-04 03:08:58,705 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalVertex - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)], task: [pipeline-1 [Source[0]-FakeSource-fake]-SourceTask (1/1)] end with state FINISHED
+2024-01-04 03:08:58,706 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)] end with state FINISHED
+2024-01-04 03:08:58,746 INFO  org.apache.seatunnel.engine.server.master.JobMaster - release the pipeline Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)] resource
+2024-01-04 03:08:58,747 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 795126525031612417, slot: SlotProfile{worker=[localhost]:5801, slotID=2, ownerJobID=795126525031612417, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='fddbd5a5-b820-48e9-a998-c5c829122e9f'}
+2024-01-04 03:08:58,748 INFO  org.apache.seatunnel.engine.server.service.slot.DefaultSlotService - received slot release request, jobID: 795126525031612417, slot: SlotProfile{worker=[localhost]:5801, slotID=1, ownerJobID=795126525031612417, assigned=true, resourceProfile=ResourceProfile{cpu=CPU{core=0}, heapMemory=Memory{bytes=0}}, sequence='fddbd5a5-b820-48e9-a998-c5c829122e9f'}
+2024-01-04 03:08:58,757 INFO  org.apache.seatunnel.engine.server.dag.physical.SubPlan - Job SeaTunnel_Job (795126525031612417), Pipeline: [(1/1)] turn to end state 
+FINISHED.
+2024-01-04 03:08:58,758 INFO  org.apache.seatunnel.engine.server.dag.physical.PhysicalPlan - Job SeaTunnel_Job (795126525031612417) end with state FINISHED
+2024-01-04 03:08:58,781 INFO  org.apache.seatunnel.engine.client.job.ClientJobProxy - Job (795126525031612417) end with state FINISHED
+2024-01-04 03:08:58,827 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - 
+***********************************************
+           Job Statistic Information
+***********************************************
+Start Time                : 2024-01-04 03:08:56
+End Time                  : 2024-01-04 03:08:58
+Total Time(s)             :                   2
+Total Read Count          :                  16
+Total Write Count         :                  16
+Total Failed Count        :                   0
+***********************************************
+
+2024-01-04 03:08:58,827 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-556511] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is SHUTTING_DOWN
+2024-01-04 03:08:58,829 INFO  com.hazelcast.internal.server.tcp.TcpServerConnection - [localhost]:5801 [seatunnel-556511] [5.1] Connection[id=1, /127.0.0.1:5801->/127.0.0.1:47127, qualifier=null, endpoint=[127.0.0.1]:47127, remoteUuid=21894781-66be-49ce-b4eb-7e178710ddf6, alive=false, connectionType=JVM, planeIndex=-1] closed. Reason: Connection closed by the other side
+2024-01-04 03:08:58,830 INFO  com.hazelcast.client.impl.connection.ClientConnectionManager - hz.client_1 [seatunnel-556511] [5.1] Removed connection to endpoint: [localhost]:5801:3f712ee8-cbc2-469a-813d-bb0c93b88fba, connection: ClientConnection{alive=false, connectionId=1, channel=NioChannel{/127.0.0.1:47127->localhost/127.0.0.1:5801}, remoteAddress=[localhost]:5801, lastReadTime=2024-01-04 03:08:58.825, lastWriteTime=2024-01-04 03:08:58.781, closedTime=2024-01-04 03:08:58.828, connected server version=5.1}
+2024-01-04 03:08:58,830 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-556511] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is CLIENT_DISCONNECTED
+2024-01-04 03:08:58,832 INFO  com.hazelcast.client.impl.ClientEndpointManager - [localhost]:5801 [seatunnel-556511] [5.1] Destroying ClientEndpoint{connection=Connection[id=1, /127.0.0.1:5801->/127.0.0.1:47127, qualifier=null, endpoint=[127.0.0.1]:47127, remoteUuid=21894781-66be-49ce-b4eb-7e178710ddf6, alive=false, connectionType=JVM, planeIndex=-1], clientUuid=21894781-66be-49ce-b4eb-7e178710ddf6, clientName=hz.client_1, authenticated=true, clientVersion=5.1, creationTime=1704337736129, latest clientAttributes=lastStatisticsCollectionTime=1704337736191,enterprise=false,clientType=JVM,clientVersion=5.1,clusterConnectionTimestamp=1704337736110,clientAddress=127.0.0.1,clientName=hz.client_1,credentials.principal=null,os.committedVirtualMemorySize=0,os.freePhysicalMemorySize=258088960,os.freeSwapSpaceSize=0,os.maxFileDescriptorCount=0,os.openFileDescriptorCount=0,os.processCpuTime=0,os.systemLoadAverage=0.205078125,os.totalPhysicalMemorySize=8216621056,os.totalSwapSpaceSize=0,runtime.availableProcessors=8,runtime.freeMemory=985750944,runtime.maxMemory=1073741824,runtime.totalMemory=1073741824,runtime.uptime=2711,runtime.usedMemory=87990880, labels=[]}
+2024-01-04 03:08:58,835 INFO  com.hazelcast.core.LifecycleService - hz.client_1 [seatunnel-556511] [5.1] HazelcastClient 5.1 (20220228 - 21f20e7) is SHUTDOWN       
+2024-01-04 03:08:58,836 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed SeaTunnel client......
+2024-01-04 03:08:58,837 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5801 is SHUTTING_DOWN
+2024-01-04 03:08:58,841 INFO  com.hazelcast.internal.partition.impl.MigrationManager - [localhost]:5801 [seatunnel-556511] [5.1] Shutdown request of Member [localhost]:5801 - 3f712ee8-cbc2-469a-813d-bb0c93b88fba this is handled
+2024-01-04 03:08:58,845 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-556511] [5.1] Shutting down connection manager...
+2024-01-04 03:08:58,847 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-556511] [5.1] Shutting down node engine...
+2024-01-04 03:08:58,868 INFO  com.hazelcast.instance.impl.NodeExtension - [localhost]:5801 [seatunnel-556511] [5.1] Destroying node NodeExtension.
+2024-01-04 03:08:58,870 INFO  com.hazelcast.instance.impl.Node - [localhost]:5801 [seatunnel-556511] [5.1] Hazelcast Shutdown is completed in 30 ms.
+2024-01-04 03:08:58,871 INFO  com.hazelcast.core.LifecycleService - [localhost]:5801 [seatunnel-556511] [5.1] [localhost]:5801 is SHUTDOWN
+2024-01-04 03:08:58,871 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed HazelcastInstance ......
+2024-01-04 03:08:58,871 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - Closed metrics executor service ......
+2024-01-04 03:08:58,873 INFO  org.apache.seatunnel.core.starter.seatunnel.command.ClientExecuteCommand - run shutdown hook because get close signal
